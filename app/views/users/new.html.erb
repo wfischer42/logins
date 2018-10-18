@@ -1,0 +1,9 @@
+<%= form_for @user do |f|%>
+  <%= f.label :full_name, "Full Name" %>
+  <%= f.text_field :email_address, placeholder: "Tony Stark" %>
+  <%= f.label :email_address, "Email" %>
+  <%= f.text_field :email_address, placeholder: "tony@stark.com" %>
+  <%= f.label :password %>
+  <%= f.password_field :password, placeholder: "********" %>
+  <%= f.submit "Create Account" %>
+<% end %>

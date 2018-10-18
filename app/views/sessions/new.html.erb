@@ -1,0 +1,11 @@
+<%= form_for @user, url:{controller: "sessions", action: "create"},
+                    html: { id: "login_form" },
+                    method: "post" do |f| %>
+  <%= f.label :email_address, "Email" %>
+  <%= f.text_field :email_address, placeholder: "tony@stark.com" %>
+  <%= f.label :password %>
+  <%= f.password_field :password, placeholder: "********" %>
+  <%= f.submit "Sign In" %>
+<% end %>
+
+<%= link_to "Create New Account", new_user_path %>
